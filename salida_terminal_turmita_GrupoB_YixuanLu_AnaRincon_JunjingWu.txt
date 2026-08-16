@@ -1,0 +1,70 @@
+Evaluando patrones conocidos en modo batalla:
+Código                     vs FFRFFL    vs FBFR
+--------------------------------------------------
+  FFRFFL                      0.5000     0.5096 ← ENEMIGO
+  FBFR                        0.4711     0.5000 ← ENEMIGO
+  RLLR                        0.4186     0.3723
+  RRLL                        0.3894     0.0420
+  LRRRRLLL                    0.4204     0.3523
+  RLLRRLLRRR                  0.3317     0.4362
+  LRRRRLLLLRRRRLLRRLLL        0.3639     0.6557
+
+Objetivo: superar a ['FFRFFL', 'FBFR']
+Fitness: media de victorias en batalla (100000 pasos por batalla)
+Corriendo AG — 80 generaciones × 60 individuos
+
+=== Genetic Algorithm ===
+Population: 60 | Generations: 80 | Mutation: 0.12 | Type: variable
+Alphabet: ['L', 'R', 'F', 'B']
+============================================================
+Gen    0 | Best: 0.5414 | Avg: 0.2700 | Worst: 0.0001 | Len:   8 | Time: 46.4s | Cache: 0/60 | FFLRRFFL
+Gen    5 | Best: 0.6190 | Avg: 0.4667 | Worst: 0.0001 | Len:  39 | Time: 68.1s | Cache: 5/60 | FLRLBBLLRRFFRBFRRRFLBFBBBRBFFRFRRBRLLBL
+Gen   10 | Best: 0.6711 | Avg: 0.4637 | Worst: 0.1540 | Len:  10 | Time: 50.9s | Cache: 3/60 | LFLRLRRFFB
+Gen   15 | Best: 0.6711 | Avg: 0.4423 | Worst: 0.0105 | Len:  10 | Time: 61.3s | Cache: 3/60 | LFLRLRRFFB
+Gen   20 | Best: 0.6711 | Avg: 0.4637 | Worst: 0.0373 | Len:  10 | Time: 41.9s | Cache: 3/60 | LFLRLRRFFB
+Gen   25 | Best: 0.6711 | Avg: 0.5072 | Worst: 0.1770 | Len:  10 | Time: 43.9s | Cache: 3/60 | LFLRLRRFFB
+Gen   30 | Best: 0.6711 | Avg: 0.4911 | Worst: 0.1711 | Len:  10 | Time: 43.3s | Cache: 3/60 | LFLRLRRFFB
+Gen   35 | Best: 0.6733 | Avg: 0.4939 | Worst: 0.0793 | Len:  25 | Time: 42.7s | Cache: 4/60 | LFLRLRRFFRRRRLLRRLRBFRFFB
+Gen   40 | Best: 0.6772 | Avg: 0.4841 | Worst: 0.0278 | Len:  47 | Time: 42.8s | Cache: 3/60 | FRLRRFRRRRRBBFRRRBFFRLLFBRFFRLRLRRLRRRBRLLRFBRF
+Gen   45 | Best: 0.6772 | Avg: 0.4611 | Worst: 0.0154 | Len:  47 | Time: 41.7s | Cache: 3/60 | FRLRRFRRRRRBBFRRRBFFRLLFBRFFRLRLRRLRRRBRLLRFBRF
+Gen   50 | Best: 0.6772 | Avg: 0.4417 | Worst: 0.0569 | Len:  47 | Time: 43.5s | Cache: 3/60 | FRLRRFRRRRRBBFRRRBFFRLLFBRFFRLRLRRLRRRBRLLRFBRF
+Gen   55 | Best: 0.6838 | Avg: 0.4958 | Worst: 0.1456 | Len:  42 | Time: 43.4s | Cache: 3/60 | FRLRRFRRRRRBBFRRRBFFRLLLRFBRFLRLBLRLRFRLLF
+Gen   60 | Best: 0.6838 | Avg: 0.5061 | Worst: 0.2212 | Len:  42 | Time: 42.0s | Cache: 3/60 | FRLRRFRRRRRBBFRRRBFFRLLLRFBRFLRLBLRLRFRLLF
+Gen   65 | Best: 0.7121 | Avg: 0.4878 | Worst: 0.2065 | Len:  55 | Time: 44.5s | Cache: 3/60 | FRLRRFRRRRRBBRRRLFBRRRRLBBFRRBBFFRLFLRFBRFRRBBLRLBFRLLF
+Gen   70 | Best: 0.7121 | Avg: 0.4767 | Worst: 0.1148 | Len:  55 | Time: 42.0s | Cache: 3/60 | FRLRRFRRRRRBBRRRLFBRRRRLBBFRRBBFFRLFLRFBRFRRBBLRLBFRLLF
+Gen   75 | Best: 0.7121 | Avg: 0.4556 | Worst: 0.1080 | Len:  55 | Time: 43.6s | Cache: 4/60 | FRLRRFRRRRRBBRRRLFBRRRRLBBFRRBBFFRLFLRFBRFRRBBLRLBFRLLF
+Gen   79 | Best: 0.7121 | Avg: 0.4959 | Worst: 0.1441 | Len:  55 | Time: 38.7s | Cache: 4/60 | FRLRRFRRRRRBBRRRLFBRRRRLBBFRRBBFFRLFLRFBRFRRBBLRLBFRLLF
+
+============================================================
+BEST EVER: fitness = 0.7121
+Chromosome: FRLRRFRRRRRBBRRRLFBRRRRLBBFRRBBFFRLFLRFBRFRRBBLRLBFRLLF
+Length: 55
+============================================================
+
+Top 10 in final population:
+  1. fit=0.7121 len= 55 FRLRRFRRRRRBBRRRLFBRRRRLBBFRRBBFFRLFLRFBRFRRBBLRLBFRLLF
+  2. fit=0.7121 len= 35 FRLRRFRRRRRBBRRRLFBRRRBRLLLLLRFRRLF
+  3. fit=0.7121 len= 47 FRLRRFRRRRRBBRRRLFBRRRBLRRRLFBRRLFLBBFBFBBFFRLF
+  4. fit=0.6719 len= 50 FRLRRFRRRRRRLLRBRRBLBBRRBRRRRRBBRLFLRLRRRBFFRRFLFL
+  5. fit=0.6159 len= 25 FRLRRFRRBBRFFBFFRRRFFLRLR
+  6. fit=0.6150 len= 60 FRLRRFRRRRRLBRRRRFBRRRBLRRRLFBRBLFLLBFBFBBFBBRBFBFFBFRFFLRLL
+  7. fit=0.6088 len= 42 FRLRRFRRRRRBLLRBRRFLBBRRBRBRRRLBRLFLRBRFRL
+  8. fit=0.6068 len= 44 FRLRRFRRRRRFBRRRBFBRBBRLBBLRRLBLRRBBLRRRLBBR
+  9. fit=0.5992 len= 40 FRLRRFRRBBRFFBLRFBLRRFLBBBLBBFRRBBLFRFBR
+  10. fit=0.5930 len= 12 FRLRRFRRFRLF
+
+============================================================
+MEJOR TURMITA EVOLUCIONADA
+============================================================
+Código RL : FRLRRFRRRRRBBRRRLFBRRRRLBBFRRBBFFRLFLRFBRFRRBBLRLBFRLLF
+Longitud  : 55
+Fitness   : 0.7121
+
+Resultados individuales:
+  vs FFRFFL       → 0.6455  GANA ✓
+  vs FBFR         → 0.7787  GANA ✓
+
+Para visualizar en la GUI:
+  python3 turmites.py
+  → Pegar en el cuadro: FRLRRFRRRRRBBRRRLFBRRRRLBBFRRBBFFRLFLRFBRFRRBBLRLBFRLLF
+  → Pulsar LoadRL → activar Battle → Run
